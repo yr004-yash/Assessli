@@ -7,9 +7,9 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/yr004-yash/Scribble_Chat/issues">Report Bug</a>
+    <a href="https://github.com/yr004-yash/Assessli/issues">Report Bug</a>
     ·
-    <a href="https://github.com/yr004-yash/Scribble_Chat/issues">Request Feature</a>
+    <a href="https://github.com/yr004-yash/Assessli/issues">Request Feature</a>
   </p>
 </p>
 
