@@ -13,7 +13,9 @@ function Login() {
     const [message, setMessage] = useState('');
     const [s1, sets1] = useState(0);
     const [s2, sets2] = useState(0);
-
+    const [s3, sets3] = useState(0);
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^\d{10}$/;
     const senddata = {
         name: name,
         email: email,
@@ -23,9 +25,10 @@ function Login() {
     const navigate = useNavigate();
     const isvalid = async (e) => {
         e.preventDefault();
-        if (name.length < 2 || phone.length != 10) {
+        if (name.length < 2 || !emailRegex.test(email) || !phoneRegex.test(phone)) {
             if (name.length < 2) sets1(1);
-            if (phone.length != 10) sets2(1);
+            if (!emailRegex.test(email)) sets2(1);
+            if(!phoneRegex.test(phone)) sets3(1);
 
         } else {
             sets1(0);
@@ -62,7 +65,7 @@ function Login() {
                                 placeholder="Enter Username"
                                 className="appearance-none block w-full bg-transparent text-white border-b border-gray-500  py-3 px-4 mb-3 leading-tight focus:outline-none  focus:border-gray-100"
                             />
-                            {s1 === 1 && <p className="text-red-500">Name length must be greater than 1</p>}
+                            {s1 === 1 && <p className="text-red-500">Username's length must be greater than 1</p>}
                         </div>
                     </div>
                     <div className="flex flex-wrap -mx-3 mb-6">
@@ -82,6 +85,7 @@ function Login() {
                                 placeholder="Enter Email"
                                 className="appearance-none block w-full bg-transparent text-white border-b border-gray-500  py-3 px-4 mb-3 leading-tight focus:outline-none  focus:border-gray-100"
                             />
+                            {s2 === 1 && <p className="text-red-500">Email must be in a proper format.</p>}
                         </div>
                     </div>
                     <div className="flex flex-wrap -mx-3 mb-6">
@@ -101,7 +105,7 @@ function Login() {
                                 placeholder="Enter Phone Number"
                                 className="appearance-none block w-full bg-transparent text-white border-b border-gray-500  py-3 px-4 mb-3 leading-tight focus:outline-none  focus:border-gray-100"
                             />
-                            {s2 === 1 && <p className="text-red-500">Phone Number length must be equal to 10</p>}
+                            {s3 === 1 && <p className="text-red-500">Phone Number must be in a proper format.</p>}
                         </div>
                     </div>
 
@@ -123,8 +127,7 @@ function Login() {
                                 onChange={(e) => setMessage(e.target.value)}
                                 className="max-h-64 min-h-[50px] appearance-none block w-full bg-transparent text-white border-b border-gray-500  py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-100"
                             ></input>
-                        </div>
-                        <div className="flex justify-center mt-5 w-full px-3">
+                            <div className="flex justify-center mt-5 w-full px-3">
                             <div className="md:flex md:items-center" />
                             <button
                                 className="shadow bg-indigo-600 hover:bg-indigo-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-2 rounded-[15px] w-full px-3"
@@ -133,6 +136,8 @@ function Login() {
                                 Submit
                             </button>
                         </div>
+                        </div>
+                        
                     </div>
                 </form>
             </div>
