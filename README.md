@@ -100,7 +100,7 @@ Contributions are what make the open source community such an amazing place to b
 
 Yash Savani - [@Yash Savani](https://www.linkedin.com/in/yash-savani-43b80b229/) - yashsavani004@gmail.com
 
-Project Link: [https://github.com/yr004-yash/Scribble_Chat](https://github.com/yr004-yash/Assessli)
+Project Link: [https://github.com/yr004-yash/Assessli](https://github.com/yr004-yash/Assessli)
 
 Deployed Link: [https://assessli.netlify.app](https://assessli.netlify.app)
 
