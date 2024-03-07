@@ -27,12 +27,16 @@ function Login() {
         e.preventDefault();
         if (name.length < 2 || !emailRegex.test(email) || !phoneRegex.test(phone)) {
             if (name.length < 2) sets1(1);
+            else sets1(0);
             if (!emailRegex.test(email)) sets2(1);
+            else sets2(0);
             if(!phoneRegex.test(phone)) sets3(1);
+            else sets3(0);
 
         } else {
             sets1(0);
             sets2(0);
+            sets3(0);
             try {
                 axios.post(`${import.meta.env.VITE_BACKEND_Sheet}`, senddata)
                     .then(response => {
