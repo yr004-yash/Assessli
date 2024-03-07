@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes fire {
+    0% {
+      box-shadow: 0 0 5px 0 rgba(201, 114, 80, 0.6),
+                  0 0 10px 0 rgba(255, 165, 0, 0.6),
+                  0 0 15px 0 rgba(87, 71, 8, 0.6);
+    }
+    50% {
+      box-shadow: 0 0 5px 5px rgba(255, 69, 0, 0.6),
+                  0 0 10px 10px rgba(255, 165, 0, 0.6),
+                  0 0 15px 15px rgba(103, 88, 7, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 5px 0 rgba(255, 69, 0, 0.6),
+                  0 0 10px 0 rgba(124, 86, 15, 0.6),
+                  0 0 15px 0 rgba(132, 115, 16, 0.6);
+    }
+  }
+  
+  .fire-effect {
+    animation: fire 1.5s infinite alternate;
+  }
+  
+  
+  

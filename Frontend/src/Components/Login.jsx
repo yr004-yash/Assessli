@@ -50,7 +50,7 @@ function Login() {
     }
     return (
         <div className='h-screen w-screen bg-slate-900 flex justify-center'>
-            <div className=" max-w-screen-md max-h-[700px]  sm:my-auto p-5 bg-slate-700 bg-opacity-10 rounded-[25px] backdrop-blur-2xl backdrop-saturate-100">
+            <div className=" max-w-screen-md max-h-[700px]  sm:my-auto p-5 bg-slate-700 bg-opacity-10 rounded-[25px] backdrop-blur-2xl backdrop-saturate-100 relative fire-effect">
                 <form className="w-full">
                     <div className="flex flex-wrap -mx-3 mb-6">
                         <div className="w-full px-3">
@@ -150,5 +150,3 @@ function Login() {
 }
 
 export default Login;
-
-
