@@ -102,7 +102,7 @@ Yash Savani - [@Yash Savani](https://www.linkedin.com/in/yash-savani-43b80b229/)
 
 Project Link: [https://github.com/yr004-yash/Scribble_Chat](https://github.com/yr004-yash/Assessli)
 
-Deployed Link: [https://scribblechatsavani004.netlify.app](https://scribblechatsavani004.netlify.app)
+Deployed Link: [https://assessli.netlify.app](https://assessli.netlify.app)
 
 Sheet to view added Data: [https://docs.google.com/spreadsheets/d/19dPyPTgO9rx17wyLkBGtwtbfMQdZGyrAf-7AW-KPix8/edit#gid=0](https://docs.google.com/spreadsheets/d/19dPyPTgO9rx17wyLkBGtwtbfMQdZGyrAf-7AW-KPix8/edit#gid=0)
 
